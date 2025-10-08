@@ -2,16 +2,25 @@
 
 <html>
     <head>
-        <title>form</title>
+        <title>forms</title>
     </head>
     <body>
-        <form action="/server.php" method="dialog">
-            <label for="username">name</label>
-            <input type="text" name="name" id="username"> <br>
+        <form action="/php.server" method="get">
+            <label for="surname">surname</label>
+            <input type="text" name="name" id="surname"> <br>
+            <label for="email">email</label>
+            <input type="email" name="mail" id="email"> <br>
             <label for="password">password</label>
-            <input type="password" name="password" id="password"> <br>
-            <button type="menu" style="color: red;">go</button>
-
+            <input type="password" name="password" id="password"><br>
+            <label for="sana">tug'ilgan yilingizni kiriting</label>
+            <input type="date" name="date" id="sana"><br>
+            <label for="talaba">talabamisiz</label>
+            <input type="checkbox" name="student" id="talaba"> <br>
+            <label for="man">man</label>
+            <input type="radio" name="person" value="man">
+            <label for="women">women</label>
+            <input type="radio" name="person" value="women"> <br>
+            <button type="submit">log in</button>
         </form>
     </body>
 </html>
