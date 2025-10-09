@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>forms_3</title>
+        <style>
+            #bam {
+                font-weight: bold;
+                color: black;
+            }
+            #bum {
+                font-weight:100;
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/php.server" method="get"> 
+            <label for="ism">name</label>
+            <input type="text" name="name" id="ism">
+            <label for="familiya">surname</label>
+            <input type="text" name="surname" id="familiya">
+            <label for="yosh">age</label>
+            <input type="number" name="age" id="yosh"><br>
+            <label for="gmail">email</label>
+            <input type="email" name="email" id="gmail">
+            <label for="yil">year</label>
+            <input type="date" name="yil" id="yil">
+            <label for="ma'lumot">avval ishlaganmisiz (dasturchi bo'lib)</label>
+            <select name="ma'lumot" id="ma'lumot">
+                <option value="0">ha</option>
+                <option value="1">yo'q </option>
+            </select> <br>
+            <label for="haqida">o'zingiz haqinggizda yozing bu biz uchun muhim</label> <br>
+            <textarea name="about" id="haqida" rows="5" cols="15"></textarea>
+        </form>
+    </body>
+</html>
